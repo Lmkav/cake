@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open sans-serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px;
+    gap: 50px;
+}
+
+.left{
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.left h1{
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.input-group{
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.input-group input{
+    padding: 10px;
+    outline: none;
+    border-radius: 12px;
+    border: #fafafa 2px solid;
+    width: 100%;
+    padding-left: 40px;
+
+}
+
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 22px;
+
+}
+
+.input-group label{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.input-group input:focus,
+.input-group input:valid {
+    border: #810707 2px solid;
+}
+
+.input-group input:focus~i,
+.input-group input:valid~i {
+    color: #810707;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label{
+    color: #810707;
+    top: 0;
+    background: white;
+    padding: 0px 10px;
+    line-height: 1;
+}
+
+.remember-forgot {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label {
+display: flex;
+gap: 8px;
+color: #1e293b;
+font-size: 14px;
+accent-color: white;
+}
+
+.remember-forgot label:hobvr {
+    color: #810707;
+}
+
+.remember-forgot a {
+    color: #1e293b;
+    font-size: 14px;
+    text-decoration:  none;
+
+}
+
+.remember-forgot a:hover {
+    color: #810707;
+}
+
+.login-btn {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #810707;
+    color: white;
+    font-weight: 600;
+    padding: 10px 70px;
+    font-size: 17px;
+}
